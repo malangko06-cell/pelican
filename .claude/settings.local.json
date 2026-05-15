@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /tmp /var/folders -name \"*.png\" -newer /Users/malangko/Downloads/펠리컨/pelican-game.html 2>/dev/null | head -20)",
+      "Read(//private/tmp/**)",
+      "Bash(ls -lt ~/Downloads/*.png ~/Downloads/*.jpg 2>/dev/null | head -10)",
+      "Read(//Users/malangko/Downloads/**)",
+      "Bash(python3 -)",
+      "Bash(base64 -i /tmp/pelican_nobg.png -o /tmp/pelican_nobg_b64.txt)"
+    ]
+  }
+}
