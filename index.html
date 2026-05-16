@@ -559,7 +559,9 @@ function loop(ts) {
   if (STATE === 'play') {
     spawnTimer += _f;
     if (spawnTimer >= spawnInterval) {
-      const spawnCount = level <= 3 ? 1 : level <= 6 ? 2 : level <= 10 ? 3 : 4;
+      const base = Math.floor((level - 1) / 8);
+      const extra = Math.random() < ((level - 1) % 8) / 8 ? 1 : 0;
+      const spawnCount = 1 + base + extra;
       for (let i = 0; i < spawnCount; i++) spawnItem();
       spawnTimer = 0;
     }
